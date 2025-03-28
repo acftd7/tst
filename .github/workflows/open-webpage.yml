@@ -1,0 +1,13 @@
+name: Daily Open Webpage 
+on:
+  schedule:
+    - cron: '12 12 * * *'  # UTC时间每天0点（北京时间8点）
+jobs:
+  open-webpage:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Access webpage 
+        run: |
+          # 使用curl访问网页（简单请求）
+          curl -L http://s15.doster123.serv00.net/up
+         
