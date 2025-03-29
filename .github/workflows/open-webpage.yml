@@ -1,7 +1,7 @@
 name: Daily Open Webpage 
 on:
   schedule:
-    - cron: '12 12 * * *'  # UTC时间每天0点（北京时间8点）
+    - cron: '12 */6 * * *'  # UTC时间每天0点（北京时间8点）
 jobs:
   open-webpage:
     runs-on: ubuntu-latest 
